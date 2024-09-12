@@ -36,16 +36,7 @@ function App() {
     return children;
   }
 
-  // const queryClient = new QueryClient({
-  //   defaultOptions: {
-  //     queries: {
-  //       staleTime: 60 * 1000,
-  //     },
-  //   },
-  // });
   return (
-    // <QueryClientProvider client={queryClient}>
-      // {/* <ReactQueryDevtools initialIsOpen={false} /> */}
       <Routes>
         <Route path="/login" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
@@ -159,7 +150,6 @@ function App() {
         )}
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    // </QueryClientProvider>
   );
 }
 
