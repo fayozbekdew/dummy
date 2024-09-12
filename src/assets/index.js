@@ -1,0 +1,1 @@
+export {default as ArrowRight} from "./right-arrow-svgrepo-com.svg"
